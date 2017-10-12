@@ -9,17 +9,51 @@
 
     <style>
       #app-container {
-        display: flex;
+        width: 400px;
+        margin: auto;
+        height : 600px;
+        border: 2px solid black;
+        margin-top: 20px;
+        position: relative;
+        padding : 0;
       }
 
       .container {
-        width: 50%;
-        height: 100vh;
-        padding: 20px;
-      }
+        padding : 0px;
 
-      .container:first-child {
-        border-right: 1px #eee solid;
+
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        background: #373737;
+        padding : 10px;
+        width: 100%;
+        color : #dedede;
+        font-size: 0.9em;
+      }
+      #boutons {
+        position : absolute;
+        bottom: 20px;
+        width: 100%;
+        left : 0;
+
+
+      }
+      #boutons ul li {
+        list-style: none;
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+
+      }
+      #boutons ul {
+        margin: auto;
+        text-align: center;
+        padding : 0;
+      }
+      #boutons ul li img{
+        width: 30px;
       }
 
     </style>
@@ -29,27 +63,25 @@
     <div id="app-container">
 
       <div class="container">
-        <h2> jQuery Application</h2>
-        <div id="jquery-app" class="app">
-          <textarea name=""></textarea>
-          <br/>
-          <button id="add-photo" class="btn btn-primary pull-right">Add photo</button>
-          <label>140</label>
-          <button id="tweet" class="btn btn-primary pull-right" disabled>Tweet</button>
-        </div>
-      </div>
+        <h2> Horloge</h2>
+        <!-- <div id="react-app" class="app"></div> -->
 
-      <div class="container">
-        <h2> React Application</h2>
-        <div id="react-app" class="app"></div>
+        <div id="boutons">
+          <ul>
+            <li><a href="#"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/17392-200.png" /></a></li>
+            <li><a href="#"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/17392-200.png" /></a></li>
+            <li><a href="#"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/17392-200.png" /></a></li>
+            <li><a href="#"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/17392-200.png" /></a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-    <script src="/dist/app.jquery.js"></script>
+
     <script src="/dist/app.react.js"></script>
   </body>
 </html>
